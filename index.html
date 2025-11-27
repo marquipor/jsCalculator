@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Calculator</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <!-- Calculator container-->
+  <main>
+  <table>
+    <!-- Display row -->
+    <tr>
+      <td colspan="4">
+      <input type="text" id="display" readonly></td>
+    </tr>
+
+    <!-- Operations row-->
+    <tr>
+      <td><input type="button" class="operation" value="+"></td>
+      <td><input type="button" class="operation" value="-"></td>
+      <td><input type="button" class="operation" value="*"></td>
+      <td><input type="button" class="operation" value="/"></td>
+    </tr>
+
+    <!-- Numbers row 7-9, AC -->
+    <tr>
+      <td><input type="button" class="number" value="7"></td>
+      <td><input type="button" class="number" value="8"></td>
+      <td><input type="button" class="number" value="9"></td>
+      <td><input type="button"  id="clear"    value="AC"></td>
+    </tr>
+
+    <!-- Numbers row 4-6 , DEL -->
+    <tr>
+      <td><input type="button" class="number" value="4"></td>
+      <td><input type="button" class="number" value="5"></td>
+      <td><input type="button" class="number" value="6"></td>
+      <td><input type="button"  id="delete" value="DEL"></td>
+    </tr>
+
+    <!-- Numbers row 1-3 -->
+    <tr>
+      <td><input type="button" class="number" value="1"></td>
+      <td><input type="button" class="number" value="2"></td>
+      <td><input type="button" class="number" value="3"></td>
+    </tr>
+
+    <!-- Numbers row 0, decimal, equals  -->
+    <tr>
+      <td><input type="button" class="number" id="num0" value="0" ></td>
+      <td><input type="button" class="number" value="."></td>
+      <td><input type="button" id="equals" value="="></td>
+    </tr>
+  </table>
+  </main>
+  
+  <!-- Footer -->
+  <footer>
+    Practising events with Javascript | marquipor | November 2025
+  </footer>
+
+  <!-- External JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>

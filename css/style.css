@@ -1,0 +1,113 @@
+ /* ==========================
+   Global Reset
+   Remove default margins/paddings
+   and set consistent box-sizing
+========================== */
+ *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/* ==========================
+   Base HTML and body
+   Full height and background color
+========================== */
+  html, body{
+    height: 100%;
+  }
+
+  body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* ensures footer sticks to bottom */
+    background-color: #F4F3F2;
+
+  }
+
+ /* ==========================
+   Main container
+   Center content both vertically and horizontally
+========================== */ 
+  main{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+/* ==========================
+   Calculator buttons styling
+========================== */
+input[type="button"]{
+  border-radius:10px;
+  font-weight: bold;
+  width:60px;
+  height:60px;
+  cursor: pointer;
+  transition: transform 120ms ease, box-shadow 120ms ease, background-color 140ms ease;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+  background-color: #fff;
+}
+
+/* Hover effect */
+input[type="button"]:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+  background-color: #f7c9e0;
+}
+
+/* Click effect */
+input[type="button"]:active {
+  transform: translateY(0px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+}
+
+/* ==========================
+   Calculator table styling
+========================== */
+
+table{
+  margin:auto;
+  background-color: lightgreen;
+  padding: 15px;
+  border-radius: 10px;
+  border-spacing: 10px 15px;
+   box-shadow:
+    0 8px 24px rgba(0,0,0,0.12),
+    0 18px 60px rgba(34,139,34,0.06),
+    inset 0 1px 0 rgba(255,255,255,0.6);
+
+}
+
+/* Remove table borders */
+table, tr, td{
+  border: none;
+}
+
+/* ==========================
+   Screen styling
+========================== */
+#display{
+	height:40px;
+    width: 100%;
+	background-color:#000;
+	border:medium #FFF;
+	font: "Space Age", monospace;
+	color:#0F0;
+	font-size:18px;
+	text-align:right;
+	padding:5px;
+}
+
+/* ==========================
+   Footer syling
+========================== */
+
+  footer{
+    margin-top: auto; /* pushes footer to bottom */ 
+    padding:10px;
+    text-align: center;
+    opacity: 0.7;
+    color: rgb(255, 49, 210);
+  }
